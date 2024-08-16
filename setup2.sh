@@ -3,8 +3,6 @@ source ~/miniconda3/etc/profile.d/conda.sh
 cd ~/src/AI-Demo
 conda activate base
 
-sh "~/src/AMD_MachineLearning/linux/install.sh"
-
 # Clone the repository
 git clone https://github.com/farshadghodsian/llava-amd-radeon-demo
 
