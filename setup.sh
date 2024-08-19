@@ -11,4 +11,4 @@ cd llava-amd-radeon-demo
 # Install required packages
 pip install accelerate fastchat gradio transformers==4.37.2
 
-echo "Setup complete. The llava environment is now active and ready to use."
+echo "Setup complete. You can now start via sh ./start.sh"
