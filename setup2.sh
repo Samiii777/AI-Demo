@@ -1,6 +1,5 @@
 #!/bin/bash
 source ~/miniconda3/etc/profile.d/conda.sh
-cd ~/src/AI-Demo
 conda activate base
 
 # Clone the repository
