@@ -1,12 +1,7 @@
 #!/bin/bash
 
-sudo apt update -y
-sudo apt dist-upgrade -y
-sudo apt install git -y
 sudo apt install openssh-server -y
 sudo apt install tmux -y
-
-mkdir -p ~/src
 
 # Create directory for Miniconda
 mkdir -p ~/miniconda3
