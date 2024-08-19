@@ -1,6 +1,7 @@
 #!/bin/bash
 
 SESSION_NAME="llava"
+cd llava-amd-radeon-demo
 
 # Check if the session exists
 if tmux has-session -t $SESSION_NAME 2>/dev/null; then
