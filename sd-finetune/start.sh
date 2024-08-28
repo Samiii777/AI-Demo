@@ -1,12 +1,10 @@
-git clone https://github.com/harrywang/finetune-sd.git
-cp -r finetune-sd/data/full-finetune/cat/ ~/src/diffusers/examples/text_to_image/data/cat/
-pip3 install pillow==10.4.0
-
 export DATA_DIR="./data/cat"
 export MODEL_NAME="runwayml/stable-diffusion-v1-5"
 export OUTPUT_DIR="./models/lora/cat"
 
-accelerate launch --mixed_precision="fp16"  train_text_to_image_lora.py \
+cd diffusers/examples/text_to_image
+accelerate launch  train_text_to_image_lora.py \
+  --mixed_precision=no \
   --pretrained_model_name_or_path=$MODEL_NAME \
   --train_data_dir=$DATA_DIR \
   --dataloader_num_workers=8 \
